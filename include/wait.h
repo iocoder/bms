@@ -12,9 +12,11 @@
 #include "inttypes.h"
 #include "util/delay.h" 
 
+/* delay macros */
+#define wait_us(usecs)  _delay_us(usecs)
+#define wait_ms(msecs)  _delay_ms(msecs)
+
 /* module prototypes */
-void wait_us   (uint16_t usecs);
-void wait_ms   (uint16_t msecs);
 void wait_task (void);
 void wait_init (void);
 
